@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 849b4b159229a844aad52018ca2e51b7
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: F_cama dreta01
+    100002: //RootNode
+    100004: F_cama esq01
+    100006: F_peu dret
+    100008: F_cama dreta02
+    100010: F_cap
+    100012: F_cama esq02
+    100014: groc
+    100016: groc01
+    100018: blau01
+    100020: F_cos
+    100022: F_paraigues
+    100024: vermell01
+    100026: Plane02
+    100028: F_ma
+    100030: blau
+    100032: _peu esq
+    100034: blau02
+    100036: helix
+    100038: vermell
+    100040: Dummy01
+    100042: ref unity
+    400000: F_cama dreta01
+    400002: //RootNode
+    400004: F_cama esq01
+    400006: F_peu dret
+    400008: F_cama dreta02
+    400010: F_cap
+    400012: F_cama esq02
+    400014: groc
+    400016: groc01
+    400018: blau01
+    400020: F_cos
+    400022: F_paraigues
+    400024: vermell01
+    400026: Plane02
+    400028: F_ma
+    400030: blau
+    400032: _peu esq
+    400034: blau02
+    400036: helix
+    400038: vermell
+    400040: Dummy01
+    400042: ref unity
+    2300000: F_cama dreta01
+    2300002: F_cama esq01
+    2300004: F_peu dret
+    2300006: F_cama dreta02
+    2300008: F_cap
+    2300010: F_cama esq02
+    2300012: groc
+    2300014: groc01
+    2300016: blau01
+    2300018: F_cos
+    2300020: F_paraigues
+    2300022: vermell01
+    2300024: F_ma
+    2300026: blau
+    2300028: _peu esq
+    2300030: blau02
+    2300032: helix
+    2300034: vermell
+    2300036: ref unity
+    3300000: F_cama dreta01
+    3300002: F_cama esq01
+    3300004: F_peu dret
+    3300006: F_cama dreta02
+    3300008: F_cap
+    3300010: F_cama esq02
+    3300012: groc
+    3300014: groc01
+    3300016: blau01
+    3300018: F_cos
+    3300020: F_paraigues
+    3300022: vermell01
+    3300024: F_ma
+    3300026: blau
+    3300028: _peu esq
+    3300030: blau02
+    3300032: helix
+    3300034: vermell
+    3300036: ref unity
+    4300000: ref unity
+    4300002: vermell
+    4300004: blau
+    4300006: groc
+    4300008: blau01
+    4300010: blau02
+    4300012: vermell01
+    4300014: groc01
+    4300016: F_cos
+    4300018: F_ma
+    4300020: F_cap
+    4300022: F_paraigues
+    4300024: helix
+    4300026: F_cama dreta01
+    4300028: F_cama dreta02
+    4300030: F_peu dret
+    4300032: F_cama esq01
+    4300034: F_cama esq02
+    4300036: _peu esq
+    7400000: Take 001
+    7400002: idle
+    7400004: idle0
+    7400006: move
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 1
+    clipAnimations:
+    - name: idle
+      takeName: 
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: 
+      firstFrame: 2
+      lastFrame: 280
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 
