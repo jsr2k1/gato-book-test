@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 9e4a75949f4ed754ea9c15460c1984a4
+ModelImporter:
+  fileIDToRecycleName:
+    4300000: bola_roja
+    4300002: bola_azul
+    4300004: bola_amarilla
+    4300006: roja
+    4300008: azul
+    4300010: amarilla
+    7400000: Take 001 //// abaco_3_bolas
+    7400002: roja //// abaco_3_bolas
+    7400004: azul //// abaco_3_bolas
+    7400006: amarilla //// abaco_3_bolas
+  serializedVersion: 10
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    generateAnimations: 3
+    bakeSimulation: 0
+    splitAnimations: 1
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: roja
+      firstFrame: 1
+      lastFrame: 100
+      wrapMode: 0
+      loop: 0
+    - name: azul
+      firstFrame: 101
+      lastFrame: 200
+      wrapMode: 0
+      loop: 0
+    - name: amarilla
+      firstFrame: 201
+      lastFrame: 300
+      wrapMode: 0
+      loop: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMesh: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  textMetaNamesToFileIDs:
+    //RootNode:
+      data:
+        first: 1
+        second: a4860100
+      data:
+        first: 4
+        second: 841a0600
+      data:
+        first: 111
+        second: 605fa900
+    amarilla:
+      data:
+        first: 1
+        second: a2860100
+      data:
+        first: 4
+        second: 821a0600
+      data:
+        first: 23
+        second: 62182300
+      data:
+        first: 33
+        second: a25a3200
+      data:
+        first: 64
+        second: 02a86100
+    azul:
+      data:
+        first: 1
+        second: a0860100
+      data:
+        first: 4
+        second: 801a0600
+      data:
+        first: 23
+        second: 60182300
+      data:
+        first: 33
+        second: a05a3200
+      data:
+        first: 64
+        second: 00a86100
+    roja:
+      data:
+        first: 1
+        second: a6860100
+      data:
+        first: 4
+        second: 861a0600
+      data:
+        first: 23
+        second: 64182300
+      data:
+        first: 33
+        second: a45a3200
+      data:
+        first: 64
+        second: 04a86100
