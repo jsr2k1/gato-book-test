@@ -5,6 +5,7 @@ public class GUIManager : MonoBehaviour
 {
 	public GUISkin m_skin;
 	public Texture2D m_iconos;
+	public Texture2D m_back;
 	
 	public Rect rectLeft;
 	public Rect rectRight;
@@ -29,6 +30,8 @@ public class GUIManager : MonoBehaviour
 	
 	public Texture2D m_current_page;
 	public Transform m_plano_mapa;
+
+	public GUIStyle m_dummy_style;
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
@@ -132,7 +135,7 @@ public class GUIManager : MonoBehaviour
 			}
 		}
 		
-		if(GUI.Button(new Rect(20,768-20-50,100,50), "BACK"))
+		if(GUI.Button(new Rect(40, Screen.height-90,100,40), m_back, m_dummy_style))
 		{
 			show_map=false;
 			m_plano_mapa.gameObject.SetActive(false);
@@ -143,8 +146,10 @@ public class GUIManager : MonoBehaviour
 	
 	void SetPageVisited(int i)
 	{
-		page_visited[i] = true;
-		current_index = i;
+		if(i>=0){
+			page_visited[i] = true;
+			current_index = i;
+		}
 	}
 }
 

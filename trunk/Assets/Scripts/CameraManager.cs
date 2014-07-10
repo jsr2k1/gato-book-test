@@ -347,7 +347,9 @@ public class CameraManager : MonoBehaviour
 			bSnapPage=false;
 			
 			int i = GetCurrentPageIndex();
-			guiManager.SendMessage("SetPageVisited", i);
+			if(i>0){
+				guiManager.SendMessage("SetPageVisited", i);
+			}
 		}
 		
 		if(currentPage!=target)
@@ -360,13 +362,17 @@ public class CameraManager : MonoBehaviour
 	
 	int GetCurrentPageIndex()
 	{
-		int i = int.Parse(currentPage.name.Substring(8,1));
-		int j = int.Parse(currentPage.name.Substring(11,1));
+		int index=-1;
+
+		if(!currentPage.name.Contains("Ultima")){
+			int i = int.Parse(currentPage.name.Substring(8,1));
+			int j = int.Parse(currentPage.name.Substring(11,1));
 		
-		int	index = j+(i-2)*9-1;
+			index = j+(i-2)*9-1;
 		
-		//Debug.Log(currentPage.name + " : " + i + " : " + j +" : " + index);
-		
+			//Debug.Log(currentPage.name + " : " + i + " : " + j +" : " + index);
+		}
+
 		return index;
 	}
 }
