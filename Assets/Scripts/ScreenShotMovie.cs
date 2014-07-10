@@ -5,25 +5,37 @@ using System.Collections;
 class ScreenShotMovie : MonoBehaviour
 {
 	public string folder = "VIDEO";
-	public int frameRate = 25;	
+	public int frameRate = 15;
+	public bool bRec = false;
+	string dir;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
+
+	void Awake()
+	{
+		DontDestroyOnLoad(transform.gameObject);
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	void Start ()
 	{
-	    // Set the playback framerate! (real time doesn't influence time anymore)
 	    Time.captureFramerate = frameRate;
+		dir ="C:\\"+folder+"\\";
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	void Update ()
 	{
-	    string dir ="C:\\"+folder+"\\";
-	    string name = String.Format("{0}/{1:D04} shot.png", dir, Time.frameCount );
-	
-	    // Capture the screenshot
-	    Application.CaptureScreenshot(name);
+		if(Input.GetKeyDown(KeyCode.R)){
+			bRec=!bRec;
+		}
+
+		if(bRec){
+		    string name = String.Format("{0}/{1:D04} shot.png", dir, Time.frameCount );
+		    Application.CaptureScreenshot(name);
+		}
 	}
 }
 	

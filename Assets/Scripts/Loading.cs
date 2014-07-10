@@ -14,7 +14,7 @@ public class Loading : MonoBehaviour
 	void OnGUI()
 	{
 		GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), m_loading);
-		GUI.Label(new Rect(Screen.width/2-50,Screen.height-100,200,50), "Cargando...", m_style);
+		GUI.Label(new Rect(0,Screen.height-100,Screen.width,50), "Cargando...", m_style);
 		pintado=true;
 	}
 	
@@ -22,7 +22,8 @@ public class Loading : MonoBehaviour
 	
 	void LateUpdate()
 	{
-		if(pintado)
+		if(pintado){
 			Application.LoadLevel(m_level);	
+		}
 	}	
 }
