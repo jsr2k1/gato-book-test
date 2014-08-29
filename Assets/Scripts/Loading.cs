@@ -32,7 +32,7 @@ public class Loading : MonoBehaviour
 	void LateUpdate()
 	{
 		if(pintado){
-			//Application.LoadLevel(m_level);	
+			Application.LoadLevel(m_level);	
 		}
 	}	
 }
