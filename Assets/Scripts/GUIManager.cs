@@ -135,7 +135,7 @@ public class GUIManager : MonoBehaviour
 			}
 		}
 		
-		if(GUI.Button(new Rect(40, Screen.height-90,100,40), m_back, m_dummy_style))
+		if(GUI.Button(new Rect(40, screenHeight-90,100,40), m_back, m_dummy_style))
 		{
 			show_map=false;
 			m_plano_mapa.gameObject.SetActive(false);
