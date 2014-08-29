@@ -41,10 +41,10 @@ public class Caratula : MonoBehaviour
 		
 		if(estado=="inicio")
 		{
-			if(GUI.Button(new Rect(60,360,270,70), "", dummy_style))
+			if(GUI.Button(new Rect(60,330,270,70), ""/*, dummy_style*/))
 				Application.LoadLevel(m_level_name);
 			
-			if(GUI.Button(new Rect(60,490,270,70), "", dummy_style))
+			if(GUI.Button(new Rect(60,460,270,70), ""/*, dummy_style*/))
 				estado="creditos1";
 
 			//if(GUI.Button(new Rect(20, Screen.height-60, 40, 40), m_share, dummy_style))
