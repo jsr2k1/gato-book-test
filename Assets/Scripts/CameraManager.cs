@@ -12,9 +12,9 @@ public class CameraManager : MonoBehaviour
 	public float page_width;
 	public float page_height;
 	
-	public float minSwipeDist = 80;
-	public float maxSwipeDist = 450;
-	public float maxSwipeTime = 1;
+	float minSwipeDist = 80;
+	float maxSwipeDist = 1000;
+	float maxSwipeTime = 2;
 	
 	public GUISkin m_skin;
 	

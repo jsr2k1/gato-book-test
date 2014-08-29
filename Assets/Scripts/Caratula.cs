@@ -47,8 +47,8 @@ public class Caratula : MonoBehaviour
 			if(GUI.Button(new Rect(60,490,270,70), "", dummy_style))
 				estado="creditos1";
 
-			if(GUI.Button(new Rect(20, Screen.height-60, 40, 40), m_share, dummy_style))
-				diffusion.Share();
+			//if(GUI.Button(new Rect(20, Screen.height-60, 40, 40), m_share, dummy_style))
+			//	diffusion.Share();
 		}
 		
 		if(estado=="creditos1")
