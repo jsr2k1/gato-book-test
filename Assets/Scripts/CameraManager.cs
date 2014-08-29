@@ -120,10 +120,13 @@ public class CameraManager : MonoBehaviour
 					
 					if(couldBeSwipe && (swipeTime < maxSwipeTime))
 					{	
+						Vector2 endPos = touch.position - startPos;
+
 						//Horizontal swipe page
 						if((swipeDistX > minSwipeDist) && (swipeDistX < maxSwipeDist) && (leftMove || rightMove))
 						{
-							swipeDirection = Mathf.Sign(touchDeltaPosition.x);
+							//swipeDirection = Mathf.Sign(touchDeltaPosition.x);
+							swipeDirection = Mathf.Sign(endPos.x);
 							
 							if(swipeDirection<0)
 								nextPage = currentPage.GetComponent<PageManager>().right;
@@ -138,8 +141,9 @@ public class CameraManager : MonoBehaviour
 						//Vertical swipe page
 						else if((swipeDistY > minSwipeDist) && (swipeDistY < maxSwipeDist) && (upMove || downMove))
 						{
-							swipeDirection = Mathf.Sign(touchDeltaPosition.y);
-							
+							//swipeDirection = Mathf.Sign(touchDeltaPosition.y);
+							swipeDirection = Mathf.Sign(endPos.y);
+
 							if(swipeDirection<0)
 								nextPage = currentPage.GetComponent<PageManager>().up;
 							else
