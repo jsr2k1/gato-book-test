@@ -89,11 +89,11 @@ public class GUIManager : MonoBehaviour
 			if(GUI.Button(new Rect(screenWidth-80,15,70,50), "", "boton_narrador"))
 				cameraManager.currentPage.SendMessage("PlayNarration");
 		
-			if(GUI.Button(new Rect(65,15,50,50), "", "boton_mapa"))
+			/*if(GUI.Button(new Rect(65,15,50,50), "", "boton_mapa"))
 			{
 				show_map=true;
 				m_plano_mapa.gameObject.SetActive(true);
-			}
+			}*/
 		}
 		else
 			OnGUIMap();
