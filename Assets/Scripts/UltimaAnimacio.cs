@@ -41,15 +41,17 @@ public class UltimaAnimacio : MonoBehaviour
 	
 	void Update()
 	{
-		if(estado=="inicio" && cameraManager.currentPage.name == "pagina_04_09")
-		//if(estado=="inicio" && cameraManager.currentPage.name == "pagina_02_03")
-		{
-			//DesactivarInicio();
-			//ActivarFinal();
-			estado="final_01_previo";
-			
-			//ganso.localScale = new Vector3(-ganso.localScale.x, ganso.localScale.y, ganso.localScale.z);
-			//ganso.position = new Vector3(31.5f, ganso.position.y, ganso.position.z);
+		if(estado=="inicio"){
+			if(cameraManager.currentPage.name == "pagina_04_09")//pagina marinero
+			{
+				//DesactivarInicio();
+				//ActivarFinal();
+				estado="final_01_previo";
+			}
+		}else{
+			if(!cameraManager.currentPage.name.StartsWith("Ultima_pagina")){
+				estado="inicio";
+			}
 		}
 	}
 	
